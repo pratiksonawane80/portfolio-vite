@@ -15,7 +15,9 @@
             </div>
         </div>
     </div>
-    <DetailsModal :openModal="showDetails" :companyData="perticulatData" @closeModal="showDetails = false"/>
+    <transition name="fade">
+        <DetailsModal :openModal="showDetails" :companyData="perticulatData" @closeModal="showDetails = false"/>
+    </transition>
 </template>
 
 <script>
@@ -44,10 +46,10 @@ export default {
                     lastDate: "11th Apr 2022",
                     image: NeumannImg,
                     resp: [
-                      "Participated in implementation of VUE.js library",
-                      "Leveraged the power of Google Maps API to implement an intelligent address autofill feature across the project",
-                      "Worked on responsive landing pages with the use of programming languages (HTML, CSS, JavaScript)",
-                      "Tested and Debugged thousand's of lines of code",
+                      "Participated in implementation of Vue.js library.",
+                      "Leveraged the power of Google Maps API to implement an intelligent address autofill feature across the project.",
+                      "Worked on responsive landing pages with the use of programming languages (HTML, CSS, JavaScript).",
+                      "Tested and Debugged thousand's of lines of code.",
                       "Implemented front-end technical solutions to meet project requirements.",
                     ]
                 },
@@ -60,8 +62,8 @@ export default {
                     lastDate: "31st Dec 2022",
                     image: SilohoImg,
                     resp: [
-                      "Developed E-commerce website for Home and Interior Design where we can customize and view Interior on Website.",
-                      "Worked on Javascript/ Jquery for building an Internal tool for the organization which helps employees to store and access data easily.",
+                      "Developed E-commerce website for home and interior design where we can customize and view interior on website.",
+                      "Worked on Javascript/ Jquery for building an internal tool for the organization which helps employees to store and access data easily.",
                       "Worked on SCSS, Bootstrap for developing responsive UI and creating attractive pages.",
                       "Developing functionality and interlinking of different components according to needs."
                     ]
@@ -69,14 +71,14 @@ export default {
                 {
                     id: 3,
                     name: "Float Enterprises Pvt. Ltd.",
-                    description: "Float Care specializes in solutions within the healthcare industry and aims to be the leader in healthcare management software. From practice management to patient engagement, the software tackles many of the pain points in healthcare.",
+                    description: "Float Care specializes in solutions within the healthcare industry and aims to be the leader in healthcare management software. From practice management to patient engagement, the software tackles many of the main points in healthcare.",
                     role: "Vue.js, vue-bootstrap, MongoDB",
                     joiningDate: "9th Jan 2023",
                     lastDate: "Till Now",
                     image: FloatImg,
                     resp: [
-                      "Implemented a user-friendly directory structure within the application, inspired by the familiar Windows Explorer interface. This feature allows users to easily navigate and manage folders.. By incorporating this directory-like functionality.",
-                      "Build the helpdesk feature within my application which provides users with a convenient and accessible platform to seek assistance and support for any issues they may encounter while using the application.",
+                      "Implemented a user-friendly directory structure within the application, inspired by the familiar Windows Explorer interface. This feature allows users to easily navigate and manage folders by incorporating this directory-like functionality.",
+                      "Built the helpdesk feature within my application which provides users with a convenient and accessible platform to seek assistance and support for any issues they may encounter while using the application.",
                       "I effectively managed a team of five individuals and successfully facilitated the process of gathering project requirements from the project manager.",
                       "Working with technologies such as Vue (with composition API), Tailwind CSS, Pinia, and Vue Bootstrap enabled me to deliver high-quality web applications."
                     ]
@@ -93,7 +95,7 @@ export default {
                       "Exam portal for students where students can perform time based exams . Nearabout 22k students gave exams at a time.",
                       "Organization is holded by prof HC Verma (padmashree ). Worked on his requirements.",
                       "Worked as an individual contractor for this project.",
-                      "Technology used - React , Typescript , Tailwind."
+                      "Technology used - React.js , Typescript , Tailwind."
                     ]
                 },
             ]
@@ -102,9 +104,17 @@ export default {
     methods: {
         onClickDetails(data) {
             this.perticulatData = data
-            console.log('clicked');
             this.showDetails = true;
         }
     }
 }
 </script>
+
+<style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s ease-in-out;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+}
+</style>

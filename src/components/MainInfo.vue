@@ -1,5 +1,5 @@
 <template>
-    <div class="md:flex justify-between text-center md:text-left">
+    <div class="md:flex justify-between text-center md:text-left fade-in">
         <div class="lg:text-[60px] md:text-3xl text-2xl font-semibold md:mr-10 md:w-3/5 md:my-40 my-16">
             <h1
                 class="bg-gradient-to-r from-[#945DD6] via-[#6978D1] to-[#13ADC7] inline-block text-transparent bg-clip-text lg:py-10 md:py-12 p-0 md:m-0 m-auto mb-2">
@@ -12,7 +12,7 @@
             </p>
             <a :href="resume" :download="pdfName" class="hidden md:block text-left md:w-72 w-56">
                 <button class="p-4 md:mt-14 mt-4 md:m-0 rounded-[60px] md:w-72 w-56 md:text-lg text-sm bg-gradient-to-r from-[#945DD6] via-[#6978D1] to-[#13ADC7]">
-                    Download CV
+                    Download Resume
                 </button>
             </a>
         </div>
@@ -26,7 +26,7 @@
         </div>
         <a :href="resume" :download="pdfName" class="md:hidden text-center">
             <button class="p-4 mt-8 md:m-0 rounded-[60px] md:w-72 w-56 md:text-lg text-sm bg-gradient-to-r from-[#945DD6] via-[#6978D1] to-[#13ADC7]">
-                Download CV
+                Download Resume
             </button>
         </a>
     </div>

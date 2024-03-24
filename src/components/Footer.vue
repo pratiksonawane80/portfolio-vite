@@ -3,11 +3,13 @@
         <div class="bg-gradient-to-r from-[#945DD6] via-[#6978D1] to-[#13ADC7] inline-block text-transparent bg-clip-text">
             Feel free to contact me
         </div>
-        <div>
-            pratiksonawane80@gmail.com
+        <div class="flex align-middle items-center">
+            <img src="../assets/email-icon.png" alt="phone-icon" height="22" width="22" class="mr-2">
+            <span>pratiksonawane80@gmail.com</span>
         </div>
-        <div>
-            9404006444
+        <div class="flex align-middle items-center">
+            <img src="../assets/phone-icon.png" alt="phone-icon" height="22" width="22" class="mr-2">
+            <span>9404006444</span>
         </div>
         <div class="flex">
             <a href="https://www.linkedin.com/in/pratiksonawane80/" target="_blank"><img src="../assets/linkdin.png" alt="linkdin" height="27" width="27" class="mx-2"></a>

@@ -6,7 +6,7 @@
         <div v-for="(data, ind) in detailInfo" :key="data" class="flex md:block relative md:static md:w-1/4">
             <div class="md:text-3xl text-xl font-semibold w-[20%] md:w-auto">{{ data.year }}</div>
             <div class="flex h-1 justify-between w-auto bg-white md:my-8 items-center last:w-0 absolute md:static top-[10px] md:left-2 left-[16.6%]" id=""
-                :class="ind === 3 ? 'w-[24.1px]' : ''">
+                :class="ind === 3 ? 'w-[24.5px]' : ''">
                 <span class="w-6 h-6 bg-gradient-to-r from-[#945DD6] via-[#6978D1] to-[#13ADC7] rounded-full"></span>
             </div>
             <p class="md:px-2 pl-6 text-[#929EB0] md:text-lg text-md font-medium w-[80%] md:w-auto border-l-2  md:border-none border-white" :class="ind === 3 ? 'border-none' : ''">
@@ -25,7 +25,7 @@ export default {
                 {
                     id: 1,
                     year: 2021,
-                    text: "Graduated from Jawaharlal Nehru Engineering College as a Bachelor of Enginner. After that for 1 year focused on coding mainly the frontend tecchnologies."
+                    text: "Graduated from Jawaharlal Nehru Engineering College as a Bachelor of Engineer. After that for 1 year focused on coding mainly the frontend technologies."
                 },
                 {
                     id: 2,
@@ -35,12 +35,12 @@ export default {
                 {
                     id: 3,
                     year: 2022,
-                    text: "In Apr - 2022 joined SILOHO as a Fontend Developer (Full-time). Here my responsibility was to build the product using reusable compoenent, improving the SEO of product using SSR and making pixel perfect design."
+                    text: "In Apr - 2022 joined SILOHO as a Fontend Developer (Full-time). Here my responsibility was to build the product using reusable components, improving the SEO of product using SSR and making pixel perfect design."
                 },
                 {
                     id: 4,
                     year: 2023,
-                    text: "In Jan - 2023 joined Float Enterprises Pvt. Ltd. as a Softwate Developer (Frontend Technologies). My contribution is to take the requirement from product manager, divide the task in between team and work on modules with use of proper logic."
+                    text: "In Jan - 2023 joined Float Enterprises Pvt. Ltd. as a Software Developer (Frontend Technologies). My contribution is to take the requirement from product manager, divide the task in between team and work on modules with use of proper logic."
                 },
             ]
         }

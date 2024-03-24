@@ -1,12 +1,10 @@
 <template>
-    <h2 class="md:text-[46px] text-2xl md:py-16 md:pt-8 pt-14">Experience And Portfolio</h2>
+    <h2 class="md:text-[46px] text-2xl md:py-16 md:pt-8 pt-14">Experience and Portfolio</h2>
     <div class="">
         <div class="p-6">
             <Project companyData="companyData" />
         </div>
     </div>
-
-    
 </template>
 
 <script>

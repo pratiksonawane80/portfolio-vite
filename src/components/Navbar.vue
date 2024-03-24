@@ -1,5 +1,5 @@
 <template>
-    <div class="hidden md:block">
+    <div class="hidden md:block fade-in">
         <div class="flex justify-between">
             <h3 class="text-3xl">P.S. Portfolio</h3>
             <ul class="flex justify-around text-lg">
@@ -14,7 +14,7 @@
         </div>
     </div>
 
-    <div class="md:hidden">
+    <div class="md:hidden fade-in">
         <div class="flex justify-between">
             <h3 class="text-3xl">P.S. Portfolio</h3>
             <div class="flex">

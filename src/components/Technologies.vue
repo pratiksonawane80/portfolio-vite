@@ -27,7 +27,7 @@
         </div>
         <div class="flex items-center">
             <div class="w-6 h-6 bg-gradient-to-r from-[#945DD6] via-[#6978D1] to-[#13ADC7] rounded-full mr-6"></div>
-            <p>Postmen</p>
+            <p>Postman</p>
         </div>
         <div class="flex items-center">
             <div class="w-6 h-6 bg-gradient-to-r from-[#945DD6] via-[#6978D1] to-[#13ADC7] rounded-full mr-6"></div>
@@ -58,18 +58,23 @@ export default {
                     percentage: "w-4/5"
                 },
                 {
-                    name: "Vue",
+                    name: "Vue.js",
                     level: "Advanced",
                     percentage: "w-4/5"
                 },
                 {
                     name: "Nuxt",
-                    level: "Intermidiate",
+                    level: "Intermediate",
                     percentage: "w-2/3"
                 },
                 {
-                    name: "React",
-                    level: "Beginer",
+                    name: "React.js",
+                    level: "Intermediate",
+                    percentage: "w-2/3"
+                },
+                {
+                    name: "Svelt",
+                    level: "Beginner",
                     percentage: "w-1/2"
                 },
             ]

@@ -35,7 +35,7 @@
 
                     <div class="mt-16 xl:min-w-[60rem]">
                         <h2 class="xl:text-2xl text-lg mt-12 font-monster">
-                            Roles & Responsibility
+                            Roles & Responsibilities
                         </h2>
 
                         <ul class="mt-6 list-disc">
