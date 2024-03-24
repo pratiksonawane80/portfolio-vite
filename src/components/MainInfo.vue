@@ -10,7 +10,7 @@
                 A passionate Front-End Developer specializing in Vue.js. With a knack for creating
                 stunning single-page applications and PWAs, I'm dedicated to delivering seamless user experiences.
             </p>
-            <a href="src/assets/resume.pdf" download="Pratik Sonawane" class="hidden md:block text-left md:w-72 w-56">
+            <a :href="resume" download="Pratik Sonawane" class="hidden md:block text-left md:w-72 w-56">
                 <button class="p-4 md:mt-14 mt-4 md:m-0 rounded-[60px] md:w-72 w-56 md:text-lg text-sm bg-gradient-to-r from-[#945DD6] via-[#6978D1] to-[#13ADC7]">
                     Download CV
                 </button>
@@ -24,7 +24,7 @@
                 absolute lg:right-40 right-32 animated-bg md:w-[301px] w-[201px] md:h-[301px] h-[201px]">
             <img src="../assets/blueCircle.svg" alt="cirlce" class="md:mt-40 md:ml-20 ml-28 pt-12">
         </div>
-        <a href="src/assets/resume.pdf" download="" class="md:hidden text-center">
+        <a :href="resume" download="Pratik Sonawane" class="md:hidden text-center">
             <button class="p-4 mt-8 md:m-0 rounded-[60px] md:w-72 w-56 md:text-lg text-sm bg-gradient-to-r from-[#945DD6] via-[#6978D1] to-[#13ADC7]">
                 Download CV
             </button>
