@@ -66,7 +66,7 @@ import NaestImg from "../assets/naestImg.png"
 export default {
 
     name: "ModalComponent",
-    props: ["companyData", "openModal"],
+    props: ["companyData", "openModal", "previousScrollY"],
     data() {
         return {
             FloatImg,
@@ -77,8 +77,10 @@ export default {
     },
     methods: {
         closeModal() {
-            console.log('close');
-            this.$emit("closeModal")
+            this.$emit("closeModal");
+            document.body.style.overflow = 'auto';
+            document.body.style.position = '';
+            window.scrollTo(0, this.previousScrollY);
         }
     }
 

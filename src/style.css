@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* @import './base.css'; */
-
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
-
 * {
   background-color: #0F1624;
   color: #fff;
@@ -31,7 +23,3 @@
     opacity: 1;
   }
 }
-
-/* ease-in {
-  opacity: 1;
-} */
