@@ -2,9 +2,10 @@
     <div v-if="openModal" class="bg-[#6978D1]/50 w-full h-full text-yellow-700 z-[99] top-0 left-0 fixed">
         <div class="max-w-10xl h-screen bg-[#6978D1] bg-opacity-20  mx-auto left-0 right-0 absolute z-[999] p-10 ">
             <div class="bg-light-blue h-full overflow-y-auto px-6 py-10 text-black rounded relative">
-                <!-- <div class="right-3 text-end text-2xl text-white cursor-pointer mr-2 mt-[-15px]" @click="closeModal">
-                    X
-                </div> -->
+                <div class="flex justify-end cursor-pointer mr-1 mt-[-15px]" @click="closeModal">
+                    <img src="../assets/close-icon.png" alt="close-icon" width="20" height="20"
+                        class="absolute top-3 right-3">
+                </div>
                 <h1
                     class="text-center font-heebo xl:text-4xl text-2xl font-bold uppercase bg-gradient-to-r from-[#945DD6] via-[#6978D1] to-[#13ADC7] text-transparent bg-clip-text">
                     {{ companyData.name }}
