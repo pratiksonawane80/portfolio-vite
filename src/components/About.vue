@@ -5,11 +5,12 @@
     <div class="flex justify-between flex-wrap ">
         <div v-for="(data, ind) in detailInfo" :key="data" class="flex md:block relative md:static md:w-1/4">
             <div class="md:text-3xl text-xl font-semibold w-[20%] md:w-auto">{{ data.year }}</div>
-            <div class="flex h-1 justify-between w-auto bg-white md:my-8 items-center last:w-0 absolute md:static top-[10px] md:left-2 left-[16.6%]" id=""
-                :class="ind === 3 ? 'w-[24.5px]' : ''">
+            <div class="flex h-1 justify-between bg-white md:my-8 items-center last:w-0 absolute md:static top-[10px] md:left-2 left-[16.6%]"
+                id="" :class="ind === 3 ? 'w-[24.5px]' : 'w-auto'">
                 <span class="w-6 h-6 bg-gradient-to-r from-[#945DD6] via-[#6978D1] to-[#13ADC7] rounded-full"></span>
             </div>
-            <p class="md:px-2 pl-6 text-[#929EB0] md:text-lg text-md font-medium w-[80%] md:w-auto border-l-2  md:border-none border-white" :class="ind === 3 ? 'border-none' : ''">
+            <p class="md:px-2 pl-6 text-[#929EB0] md:text-lg text-md font-medium w-[80%] md:w-auto border-l-2  md:border-none border-white"
+                :class="ind === 3 ? 'border-none' : ''">
                 {{ data.text }}
             </p>
         </div>
