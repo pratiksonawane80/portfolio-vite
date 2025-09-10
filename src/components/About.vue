@@ -23,11 +23,11 @@ export default {
     data() {
         return {
             detailInfo: [
-                {
-                    id: 1,
-                    year: 2021,
-                    text: "Graduated from Jawaharlal Nehru Engineering College as a Bachelor of Engineer. After that for 1 year focused on coding mainly the frontend technologies."
-                },
+                // {
+                //     id: 1,
+                //     year: 2021,
+                //     text: "Graduated from Jawaharlal Nehru Engineering College as a Bachelor of Engineer. After that for 1 year focused on coding mainly the frontend technologies."
+                // },
                 {
                     id: 2,
                     year: 2022,
@@ -42,6 +42,11 @@ export default {
                     id: 4,
                     year: 2023,
                     text: "In Jan - 2023 joined Float Enterprises Pvt. Ltd. as a Software Developer (Frontend Technologies). My contribution is to take the requirement from product manager, divide the task in between team and work on modules with use of proper logic."
+                },
+                {
+                    id: 4,
+                    year: 2024,
+                    text: "In Sept - 2024 Joined Hackett Group as a Full Stack Developer, led the development of a full-stack Procurement Tool integrated with SAP S/4HANA. Delivered a cross-platform mobile app for HBL and maintained React.js apps with Supabase backend, enhancing SAP functionality."
                 },
             ]
         }

@@ -16,7 +16,8 @@
         </div>
     </div>
     <transition name="fade">
-        <DetailsModal :openModal="showDetails" :previousScrollY="previousScrollY" :companyData="perticulatData" @closeModal="showDetails = false"/>
+        <DetailsModal :openModal="showDetails" :previousScrollY="previousScrollY" :companyData="perticulatData"
+            @closeModal="showDetails = false" />
     </transition>
 </template>
 
@@ -26,32 +27,64 @@ import NeumannImg from "../assets/Image.png"
 import SilohoImg from "../assets/silohoImg.png"
 import NaestImg from "../assets/naestImg.png"
 import DetailsModal from "./DetailsModal.vue"
+import HackettImg from "../assets/hackett2.png"
 export default {
-    components: {DetailsModal},
+    components: { DetailsModal },
     data() {
         return {
             FloatImg,
             NeumannImg,
             SilohoImg,
             NaestImg,
+            HackettImg,
             showDetails: false,
             perticulatData: null,
             previousScrollY: 0,
             companyData: [
+                // {
+                //     id: 1,
+                //     name: "Neumann Fornax",
+                //     description: "Service based company mainly working for US clients",
+                //     role: "Vue.js, Quasar, HTML",
+                //     joiningDate: "1st Dec 2021",
+                //     lastDate: "11th Apr 2022",
+                //     image: NeumannImg,
+                //     resp: [
+                //       "Participated in implementation of Vue.js library.",
+                //       "Leveraged the power of Google Maps API to implement an intelligent address autofill feature across the project.",
+                //       "Worked on responsive landing pages with the use of programming languages (HTML, CSS, JavaScript).",
+                //       "Tested and Debugged thousand's of lines of code.",
+                //       "Implemented front-end technical solutions to meet project requirements.",
+                //     ]
+                // },
                 {
-                    id: 1,
-                    name: "Neumann Fornax",
-                    description: "Service based company mainly working for US clients",
-                    role: "Vue.js, Quasar, HTML",
-                    joiningDate: "1st Dec 2021",
-                    lastDate: "11th Apr 2022",
-                    image: NeumannImg,
+                    id: 5,
+                    name: "The Hackett Group",
+                    description: "The Hackett Group India specializes in consulting for process transformation and digital strategy, leveraging deep expertise in SAP implementation and integration to help organizations achieve operational excellence and world-class performance.",
+                    role: "Java, Spring Boot, MySQL, PostGress, React.js",
+                    joiningDate: "2nd Sept 2024",
+                    lastDate: "Till Now",
+                    image: HackettImg,
                     resp: [
-                      "Participated in implementation of Vue.js library.",
-                      "Leveraged the power of Google Maps API to implement an intelligent address autofill feature across the project.",
-                      "Worked on responsive landing pages with the use of programming languages (HTML, CSS, JavaScript).",
-                      "Tested and Debugged thousand's of lines of code.",
-                      "Implemented front-end technical solutions to meet project requirements.",
+                        "Designed, developed, and successfully deployed a cross-platform mobile application for HBL client, ensuring smooth performance on both Android and iOS platform.",
+                        "Led a team of 4 developers in designing, building and deploying a full-stack Procurement Tool for client CEAT, integrating with SAP S/4HANA services using Java Spring Boot and MySQL for the backend and Thymeleaf for the frontend. Implemented batch jobs with multithreading to enhance system performance and scalability.",
+                        "Developed and maintained a full-stack application using React.js with Supabase(Postgress) as a database. Integrated SAP functionalities and experimented with modern AI-assisted tools(Lovable.ai etc.) to accelerate feature development.",
+                        "Resolved key issues in legacy applications built with JSP, improving stability, code reliability and overall maintainability."
+                    ]
+                },
+                {
+                    id: 3,
+                    name: "Float Enterprises Pvt. Ltd.",
+                    description: "Float Care specializes in solutions within the healthcare industry and aims to be the leader in healthcare management software. From practice management to patient engagement, the software tackles many of the main points in healthcare.",
+                    role: "Vue.js, vue-bootstrap, MongoDB",
+                    joiningDate: "9th Jan 2023",
+                    lastDate: "24th Aug 2024",
+                    image: FloatImg,
+                    resp: [
+                        "Implemented a user-friendly directory structure within the application, inspired by the familiar Windows Explorer interface. This feature allows users to easily navigate and manage folders by incorporating this directory-like functionality.",
+                        "Built the helpdesk feature within my application which provides users with a convenient and accessible platform to seek assistance and support for any issues they may encounter while using the application.",
+                        "I effectively managed a team of five individuals and successfully facilitated the process of gathering project requirements from the project manager.",
+                        "Working with technologies such as Vue (with composition API), Tailwind CSS, Pinia, and Vue Bootstrap enabled me to deliver high-quality web applications."
                     ]
                 },
                 {
@@ -63,27 +96,13 @@ export default {
                     lastDate: "31st Dec 2022",
                     image: SilohoImg,
                     resp: [
-                      "Developed E-commerce website for home and interior design where we can customize and view interior on website.",
-                      "Worked on Javascript/ Jquery for building an internal tool for the organization which helps employees to store and access data easily.",
-                      "Worked on SCSS, Bootstrap for developing responsive UI and creating attractive pages.",
-                      "Developing functionality and interlinking of different components according to needs."
+                        "Developed E-commerce website for home and interior design where we can customize and view interior on website.",
+                        "Worked on Javascript/ Jquery for building an internal tool for the organization which helps employees to store and access data easily.",
+                        "Worked on SCSS, Bootstrap for developing responsive UI and creating attractive pages.",
+                        "Developing functionality and interlinking of different components according to needs."
                     ]
                 },
-                {
-                    id: 3,
-                    name: "Float Enterprises Pvt. Ltd.",
-                    description: "Float Care specializes in solutions within the healthcare industry and aims to be the leader in healthcare management software. From practice management to patient engagement, the software tackles many of the main points in healthcare.",
-                    role: "Vue.js, vue-bootstrap, MongoDB",
-                    joiningDate: "9th Jan 2023",
-                    lastDate: "Till Now",
-                    image: FloatImg,
-                    resp: [
-                      "Implemented a user-friendly directory structure within the application, inspired by the familiar Windows Explorer interface. This feature allows users to easily navigate and manage folders by incorporating this directory-like functionality.",
-                      "Built the helpdesk feature within my application which provides users with a convenient and accessible platform to seek assistance and support for any issues they may encounter while using the application.",
-                      "I effectively managed a team of five individuals and successfully facilitated the process of gathering project requirements from the project manager.",
-                      "Working with technologies such as Vue (with composition API), Tailwind CSS, Pinia, and Vue Bootstrap enabled me to deliver high-quality web applications."
-                    ]
-                },
+
                 {
                     id: 4,
                     name: "Shiksha Sopan",
@@ -93,10 +112,10 @@ export default {
                     lastDate: "27th Jul 2023",
                     image: NaestImg,
                     resp: [
-                      "Exam portal for students where students can perform time based exams . Nearabout 22k students gave exams at a time.",
-                      "Organization is holded by prof HC Verma (padmashree ). Worked on his requirements.",
-                      "Worked as an individual contractor for this project.",
-                      "Technology used - React.js , Typescript , Tailwind."
+                        "Exam portal for students where students can perform time based exams . Nearabout 22k students gave exams at a time.",
+                        "Organization is holded by prof HC Verma (padmashree ). Worked on his requirements.",
+                        "Worked as an individual contractor for this project.",
+                        "Technology used - React.js , Typescript , Tailwind."
                     ]
                 },
             ]
@@ -108,7 +127,7 @@ export default {
             this.previousScrollY = window.scrollY;
             this.showDetails = true;
             document.body.style.position = 'fixed';
-            document.body.style.top = -this.previousScrollY+'px';
+            document.body.style.top = -this.previousScrollY + 'px';
             document.body.style.overflow = 'auto';
         }
     }
@@ -116,10 +135,13 @@ export default {
 </script>
 
 <style scoped>
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.5s ease-in-out;
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s ease-in-out;
 }
-.fade-enter, .fade-leave-to{
-  opacity: 0;
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
 }
 </style>
